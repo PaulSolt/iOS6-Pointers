@@ -25,6 +25,8 @@ int main(int argc, const char * argv[]) {
         // 'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\n', '\0'
         //  0    1    2    3    4    5    6    7    8    9    10   11   12    13
         
+        //                     10 11 12 13 14 15
+        // 0 1 2 3 4 5 6 7 8 9 A  B  C  D  E  F
         letter = *(ptr + 6);
         printf("%c\n", letter);
         
@@ -32,8 +34,9 @@ int main(int argc, const char * argv[]) {
         // i = i + 1
         printf("For Loop\n");
         for (int i = 0; i < strlen(ptr); i++) {
+            // for (initialize index variable; end condition ; increment)
             letter = *(ptr + i);
-            printf("%c\n", letter);
+            printf("%c address: %p\n", letter, (ptr + i));
         }
         
         
