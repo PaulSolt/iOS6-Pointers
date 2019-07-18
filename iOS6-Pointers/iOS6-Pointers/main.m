@@ -8,6 +8,36 @@
 
 #import <Foundation/Foundation.h>
 
+void pointerTest() {
+    
+    char *message = "Hello xxxxxxxx!"; // '\0' = null terminated
+    
+    printf("message pointer: %p\n", message);
+    printf("message: %s\n", message);
+    
+    unsigned long length = strlen(message);
+    char *ptr = malloc(sizeof(char) * length + 1); // memory allocation + 1 for '\0'
+    ptr = strcpy(ptr, message);
+    
+    ptr[6] = 'P'; // START HERE
+    // *(ptr + 6) = 'P';
+    *(ptr + 7) = 'a';
+    *(ptr + 8) = 'u';
+    ptr[9] = 'l';
+    ptr[10] = '!';
+    ptr[11] = '\0';
+    
+    
+    // Set your name!
+    // Null terminate with '\0'
+    
+    printf("message: %s\n", ptr);
+    
+    // message: Hello Paul!
+    
+    free(ptr);
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
@@ -39,8 +69,26 @@ int main(int argc, const char * argv[]) {
             printf("%c address: %p\n", letter, (ptr + i));
         }
         
+        long number = 42;
+        int number2 = 27;
+        double pi = 3.14;
         
+        long *numPtr = &number; // store the memory address of number into numPtr
+        int *num2Ptr = &number2;
+        double *piPtr = &pi;
+        
+        printf("number: %lu numPtr: %p\n", number, numPtr);
+        
+        pointerTest();
+        
+        
+        NSString *name = @"Bob";
+        NSLog(@"Name: %@", name);
+        printf("&name: %p\n", &name); // name is a pointer, so it stores a memory address
+        printf("name: %p\n", name); // dereference name to get it's value
     }
+    
+    
     
     return 0;   // exits with success, non-zero is not successful
 }
