@@ -13,6 +13,7 @@
 		BDEDFF8422E0E91900CDBB95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEDFF8322E0E91900CDBB95 /* Assets.xcassets */; };
 		BDEDFF8722E0E91900CDBB95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEDFF8522E0E91900CDBB95 /* LaunchScreen.storyboard */; };
 		BDEDFF8A22E0E91900CDBB95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEDFF8922E0E91900CDBB95 /* main.m */; };
+		BDEDFF9222E0EF1B00CDBB95 /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BDEDFF9122E0EF1B00CDBB95 /* LSIPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		BDEDFF8622E0E91900CDBB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEDFF8822E0E91900CDBB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDEDFF8922E0E91900CDBB95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BDEDFF9022E0EF1B00CDBB95 /* LSIPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPerson.h; sourceTree = "<group>"; };
+		BDEDFF9122E0EF1B00CDBB95 /* LSIPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				BDEDFF7B22E0E91700CDBB95 /* AppDelegate.m */,
 				BDEDFF7D22E0E91700CDBB95 /* ViewController.h */,
 				BDEDFF7E22E0E91700CDBB95 /* ViewController.m */,
+				BDEDFF9022E0EF1B00CDBB95 /* LSIPerson.h */,
+				BDEDFF9122E0EF1B00CDBB95 /* LSIPerson.m */,
 				BDEDFF8022E0E91700CDBB95 /* Main.storyboard */,
 				BDEDFF8322E0E91900CDBB95 /* Assets.xcassets */,
 				BDEDFF8522E0E91900CDBB95 /* LaunchScreen.storyboard */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDEDFF7F22E0E91700CDBB95 /* ViewController.m in Sources */,
+				BDEDFF9222E0EF1B00CDBB95 /* LSIPerson.m in Sources */,
 				BDEDFF8A22E0E91900CDBB95 /* main.m in Sources */,
 				BDEDFF7C22E0E91700CDBB95 /* AppDelegate.m in Sources */,
 			);

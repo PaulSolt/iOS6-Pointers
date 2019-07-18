@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LSIPerson.h"
 
 @interface ViewController ()
 
@@ -58,8 +59,35 @@
     printf("Average: %f\n", average);
 
 
+    LSIPerson *sally = [[LSIPerson alloc] init];
+    sally.firstName = @"Sally";
+    NSLog(@"%@", sally.firstName);
 
+    sally.firstName = @"Sue";
+    NSLog(@"%@", sally.firstName);
+    
+    NSMutableString *name = [@"Sally" mutableCopy];
+    sally.firstName = name;
+    NSLog(@"%@", sally.firstName);
+
+    
+    [name appendString:@"ASDF"];
+
+    NSLog(@"%@", sally.firstName);
+    
+    sally.firstName = @"Kevin";
 }
 
+
+//typedef NS_ENUM(rawType, nameOfEnum) {
+//
+//
+//};
+
+typedef NS_ENUM(NSInteger, PaperType) {
+    PaperTypeTransparency,
+    PaperTypeHeavyWeight,
+    PaperTypeLightWeight,
+};
 
 @end
